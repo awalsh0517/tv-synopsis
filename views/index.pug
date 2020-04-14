@@ -1,0 +1,23 @@
+html
+head
+  link(rel="stylesheet" href="/styles.css")
+  body
+    include partials/header
+      h2.mainpageheaders Developed By
+      ul 
+      each director in showdata.developedBy
+        li.bulletpoints= director
+      h2.mainpageheaders Starring
+      ul  
+      each star in showdata.starring
+        li.bulletpoints= star
+      h2.mainpageheaders Seasons
+      ul 
+      for seasons in showdata.seasons
+      
+        //- li= season
+        li.bulletpoints: a(href=`/seasonspage/${seasons.number}`)= `Season ${seasons.number}`
+        
+
+
+    

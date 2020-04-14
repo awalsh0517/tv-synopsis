@@ -1,0 +1,21 @@
+html
+head 
+  link(rel="stylesheet" href="/styles.css")
+  body
+    include partials/header
+    h2.seasonheader= `Season ${season.number}`
+    table.table
+      tr
+        th.rowheader.border No.
+        th.rowheader.border Title
+        th.rowheader.border Director
+      for episodes in season.episodes
+        tr 
+          td.episodenumber.border.cellstyles= `${episodes.number}`
+          td.episodetitle.border.cellstyles= `${episodes.title}`
+          td.border.cellstyles= `${episodes.director}`
+          tr
+            td.description.border(colspan= '3')= `${episodes.synopsis}` 
+      
+
+    

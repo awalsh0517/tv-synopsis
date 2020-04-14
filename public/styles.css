@@ -1,0 +1,44 @@
+.seasonheader {
+  text-align: center;
+}
+
+.rowheader {
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  height: 35px;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: auto 6%;
+}
+
+.cellstyles {
+  padding-left: 25px;
+  height: 35px;
+}
+
+.episodenumber {
+  width: 5%;
+}
+
+.episodetitle {
+  width: 65%;
+}
+
+.description {
+  height: 65px;
+}
+
+.mainpageheaders {
+  margin-left: 20px;
+}
+
+.bulletpoints {
+  margin-left: 40px;
+}
